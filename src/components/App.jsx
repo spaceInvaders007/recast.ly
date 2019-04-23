@@ -2,6 +2,7 @@
 import VideoList from './VideoList.js';
 import Search from './Search.js';
 import VideoPlayer from './VideoPlayer.js';
+import exampleVideoData from '../data/exampleVideoData.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class App extends React.Component {
             <div><h5><em><VideoPlayer /> </em> view goes here</h5></div>
           </div>
           <div className="col-md-5">
-            <div><h5><VideoList /> </h5></div>
+            <div><h5><VideoList videos={exampleVideoData}/> </h5></div>
           </div>
         </div>
       </div>
